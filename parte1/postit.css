@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Rubik+Doodle+Triangles&display=swap");
+
+body {
+  background-color: #666666;
+  max-width: 1199px;
+}
+h1 {
+  font-family: creepster;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+p {
+  font-family: "Rubik Doodle Triangles";
+}
+.container {
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container div {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 20px;
+  border-radius: 5px;
+}
+
+.post-it1,
+.post-it5,
+.post-it7 {
+  background-color: #ddddad;
+  transform: rotate(356deg) translate(-10px, 2px);
+}
+.post-it2,
+.post-it4,
+.post-it8 {
+  background-color: #b6d9b7;
+  transform: rotate(12deg) translate(-9px, 9px);
+}
+
+.post-it3,
+.post-it6 {
+  background-color: #b3b2ce;
+  transform: rotate(352deg) translate(-10px, 12px);
+}
+.post-it1:hover,
+.post-it2:hover,
+.post-it3:hover,
+.post-it4:hover,
+.post-it5:hover,
+.post-it6:hover,
+.post-it7:hover,
+.post-it8:hover {
+  transform: scale(1.5);
+  z-index: 2;
+  box-shadow: 0px 5px 10px black;
+  transition: transform 1s linear 0s, box-shadow 1s linear 0s;
+}
